@@ -1,0 +1,166 @@
+/* Base Styles-----------*/
+
+body{
+    background: linear-gradient(45deg, rgb(219, 79, 14), rgb(238, 165, 8), rgb(182, 61, 61));
+    margin: 0;
+    font:lem/1.25 "Helvetica Neue", Helvetics, Arial, Sans-serif;
+}
+
+a{
+    Text-decoration:none;
+    Color:rgba(14, 14, 58, 0.151);
+}
+
+H1{
+    Color:rgb(35, 35, 44);
+    Letter-spacing:2px;
+    text-align: left;
+}
+
+H2{
+    Color:rgb(35, 35, 44);
+    Letter-spacing:2px;
+}
+
+H3{
+    Color:rgb(35, 35, 44);
+    Letter-spacing:2px;
+}
+.header, .nav {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .header{
+    justify-content: space-between;
+  }
+  /* Psuedo Classes--------*/
+
+  a:link {
+    color:black;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(2, 32, 15);
+  }
+  
+  a:hover {
+    color: rgba(61, 148, 58, 0.4);
+  }
+  
+  a:active {
+    color: rgb(2, 10, 32);
+  }
+
+  /*Main Styles------*/  
+.title{
+  color: rgb(243, 64, 10);
+  font-size: 18px;
+  font-style: italic, helvetica;
+}  
+  .intro {
+    font-size: 1.25em; /* 20px/16px */
+    line-height: 1.6;  
+  }
+  
+  .main-header{
+    background-color:linear-gradient(45deg, rgb(219, 79, 14), rgb(238, 165, 8), rgb(182, 61, 61));
+    padding: top 1.5;
+    background-repeat: no-repeat;
+    background-position:left;
+    }
+    .title{
+        color:black;
+        font-size:1.625rem;
+    }
+    
+    .primary-content,
+    .main-header,
+    .main-footer{
+        text-align:center;
+    
+    }
+  .main-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 10px solid #ec0f0f;
+  }
+  
+  .t-border {
+    border-top: 2px solid #c01422;
+  }
+
+.primary-content {
+	padding-top: 25px;
+  padding-bottom: 95px;
+}
+
+.secondary-content {
+	padding-top: 80px;
+	padding-bottom: 70px;
+  border-bottom: 2px solid #f30727;
+}
+
+.callout {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block;
+}
+/* Layout Styles ------------------ */
+
+.primary-content, 
+.secondary-content {
+  width: 60%;
+  margin: auto;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media (min-width: 769px) {
+
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+
+	.name {
+		width: 240px;
+		margin-right: 50px;
+	}
+
+    .container{
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    }
+
+    .name,
+    .main-nav,
+    .main-nav li{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    }
+
+    ul, 
+    li{
+    flex: column;
+    text-align:center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+
+    .name a,
+    .main-nav a,{
+    padding: 10px 15px;
+    display: flex;
+    }
+}
